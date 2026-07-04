@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9e9ff"/><stop offset=".55" stop-color="#fbffff"/><stop offset="1" stop-color="#d8f4d5"/></linearGradient>
+<linearGradient id="grass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39b85a"/><stop offset="1" stop-color="#075c2d"/></linearGradient>
+<filter id="sh"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-opacity=".28"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<circle cx="1360" cy="150" r="105" fill="#fff2a4"/>
+<path d="M0 480c250-90 430-65 650-20 260 53 490 10 950-100v640H0z" fill="#2fb855"/>
+<path d="M0 650c300-95 520-35 820-75 315-42 525-138 780-95v520H0z" fill="url(#grass)"/>
+<path d="M0 820c330-60 590-45 880-16 310 30 510 16 720-55v251H0z" fill="#073b20"/>
+<g filter="url(#sh)" transform="translate(950 350)">
+<circle cx="120" cy="65" r="45" fill="#ffd9b8"/>
+<rect x="60" y="110" width="132" height="190" rx="30" fill="#08743d"/>
+<rect x="78" y="142" width="96" height="56" rx="11" fill="#fff"/>
+<text x="126" y="177" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#08743d">حصن</text>
+<path d="M0 182h340" stroke="#384b32" stroke-width="30" stroke-linecap="round"/>
+<path d="M340 182l92-65" stroke="#384b32" stroke-width="20" stroke-linecap="round"/>
+<path d="M430 118c62 39 78 91 30 146-66-26-105-76-30-146z" fill="#31c95a"/>
+<rect x="58" y="305" width="58" height="170" fill="#263529"/>
+<rect x="142" y="305" width="58" height="170" fill="#263529"/>
+</g>
+<g filter="url(#sh)">
+<rect x="90" y="450" width="390" height="260" rx="36" fill="#fff"/>
+<rect x="122" y="487" width="326" height="170" rx="20" fill="#eaf7ed"/>
+<text x="285" y="575" text-anchor="middle" font-family="Arial" font-size="52" font-weight="800" fill="#08743d">LANDSCAPE</text>
+<text x="285" y="628" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#d8ad37">Hisn Oman</text>
+</g>
+</svg>

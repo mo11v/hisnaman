@@ -1,0 +1,5 @@
+Image Credits / مصادر الصور:
+- Fly and cockroach photos provided by user.
+- Ant, termite, bed bug, mosquito, flea, rodent, scorpion and tank-cleaning images are included locally as static files from Wikimedia Commons sources searched during preparation.
+- Contracts/business image uses an uploaded client/project image.
+- Social URLs for Instagram/Facebook/TikTok are placeholders; replace with official account links when available.
