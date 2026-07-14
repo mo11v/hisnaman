@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "title": "هايبر ماركت العامرات",
+      "category": "هايبر ماركت",
+      "location": "العامرات - سلطنة عمان",
+      "image": "/assets/clients/client-1.jpg",
+      "description": "تنفيذ برنامج مكافحة آفات متكامل."
+    },
+    {
+      "title": "مركز الإعداد لتأهيل الإصابات",
+      "category": "مركز طبي",
+      "location": "سلطنة عمان",
+      "image": "/assets/clients/client-2.jpg",
+      "description": "خدمة مكافحة ووقاية داخل منشأة صحية."
+    },
+    {
+      "title": "مطعم ركن الوليمة",
+      "category": "مطعم",
+      "location": "العامرات",
+      "image": "/assets/clients/client-3.jpg",
+      "description": "فحص ومعالجة مناطق المطبخ والمخازن."
+    },
+    {
+      "title": "مغسلة مسك لاندرى",
+      "category": "مغسلة",
+      "location": "العامرات",
+      "image": "/assets/clients/client-4.jpg",
+      "description": "معالجة وقائية للموقع."
+    },
+    {
+      "title": "مطعم TCT حيدر آبادي",
+      "category": "مطعم",
+      "location": "العامرات",
+      "image": "/assets/clients/client-5.jpg",
+      "description": "خدمة مكافحة آفات للمطعم."
+    }
+  ]
+}

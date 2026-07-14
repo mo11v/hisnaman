@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "title": "مكافحة الصراصير",
+      "slug": "cockroaches",
+      "icon": "🪳",
+      "image": "/assets/pests/cockroach.jpg",
+      "description": "القضاء على الصراصير داخل المطابخ والحمامات وفتحات الصرف.",
+      "details": "القضاء على الصراصير داخل المطابخ والحمامات وفتحات الصرف."
+    },
+    {
+      "title": "مكافحة الذباب",
+      "slug": "flies",
+      "icon": "🪰",
+      "image": "/assets/pests/fly.jpg",
+      "description": "مكافحة الذباب المنزلي ومعالجة مصادر التكاثر.",
+      "details": "مكافحة الذباب المنزلي ومعالجة مصادر التكاثر."
+    },
+    {
+      "title": "مكافحة النمل",
+      "slug": "ants",
+      "icon": "🐜",
+      "image": "/assets/pests/ants.jpg",
+      "description": "حلول فعالة لجميع أنواع النمل ومسارات الدخول.",
+      "details": "حلول فعالة لجميع أنواع النمل ومسارات الدخول."
+    },
+    {
+      "title": "مكافحة النمل الأبيض",
+      "slug": "termites",
+      "icon": "🏚️",
+      "image": "/assets/pests/termites.jpg",
+      "description": "حماية المباني من النمل الأبيض / الرمة.",
+      "details": "حماية المباني من النمل الأبيض / الرمة."
+    },
+    {
+      "title": "مكافحة بق الفراش",
+      "slug": "bed-bugs",
+      "icon": "🛏️",
+      "image": "/assets/pests/bedbugs.jpg",
+      "description": "القضاء على بق الفراش في المراتب والأثاث.",
+      "details": "القضاء على بق الفراش في المراتب والأثاث."
+    },
+    {
+      "title": "مكافحة القوارض",
+      "slug": "rodents",
+      "icon": "🐀",
+      "image": "/assets/pests/rodents.jpg",
+      "description": "مكافحة الفئران والجرذان بشكل آمن.",
+      "details": "مكافحة الفئران والجرذان بشكل آمن."
+    },
+    {
+      "title": "تنظيف وتعقيم الخزانات",
+      "slug": "tank-cleaning",
+      "icon": "💧",
+      "image": "/assets/pests/tank-cleaning.jpg",
+      "description": "تنظيف وتعقيم خزانات المياه.",
+      "details": "تنظيف وتعقيم خزانات المياه."
+    },
+    {
+      "title": "لاند سكيب",
+      "slug": "landscape",
+      "icon": "🌿",
+      "image": "/assets/pests/landscape.jpg",
+      "description": "تنسيق الحدائق والعناية بالمسطحات الخضراء.",
+      "details": "تنسيق الحدائق والعناية بالمسطحات الخضراء."
+    }
+  ]
+}

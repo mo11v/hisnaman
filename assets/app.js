@@ -21,6 +21,6 @@ function sendWhatsApp(e){
  const city=(document.getElementById('city')?.value||'').trim();
  const service=(document.getElementById('service')?.value||'').trim();
  const msg=(document.getElementById('msg')?.value||'').trim();
- const text=`مرحبًا حصن أمان، أريد طلب خدمة.%0Aالاسم: ${encodeURIComponent(name)}%0Aالمنطقة: ${encodeURIComponent(city)}%0Aالخدمة: ${encodeURIComponent(service)}%0Aوصف المشكلة: ${encodeURIComponent(msg)}`;
- window.open(`https://wa.me/96891918556?text=${text}`,'_blank');
+ const raw=`مرحبًا حصن أمان، أريد طلب خدمة.\nالاسم: ${name}\nالمنطقة: ${city}\nالخدمة: ${service}\nوصف المشكلة: ${msg}`;
+ window.open(`https://wa.me/96891918556?text=${encodeURIComponent(raw)}`,'_blank');
 }

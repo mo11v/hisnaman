@@ -1,73 +1,91 @@
 backend:
   name: git-gateway
   branch: main
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 locale: "ar"
 site_url: "https://hisnaman.com"
 display_url: "https://hisnaman.com"
 logo_url: "/assets/logo.jpg"
-
 collections:
-  - name: "posts"
-    label: "مجلة الأسرة"
-    folder: "content/posts"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - {label: "العنوان", name: "title", widget: "string"}
-      - {label: "الرابط المختصر", name: "slug", widget: "string"}
-      - {label: "الصورة", name: "image", widget: "image", required: false}
-      - {label: "الوصف المختصر", name: "description", widget: "text", required: false}
-      - {label: "تاريخ النشر", name: "date", widget: "datetime", required: false}
-      - {label: "المحتوى", name: "body", widget: "markdown"}
-
-  - name: "services"
-    label: "الخدمات"
-    folder: "content/services"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - {label: "اسم الخدمة", name: "title", widget: "string"}
-      - {label: "الرابط المختصر", name: "slug", widget: "string"}
-      - {label: "الأيقونة", name: "icon", widget: "string", required: false}
-      - {label: "الصورة", name: "image", widget: "image", required: false}
-      - {label: "وصف مختصر", name: "description", widget: "text"}
-      - {label: "تفاصيل الخدمة", name: "body", widget: "markdown"}
-
-  - name: "clients"
-    label: "عملاؤنا"
-    folder: "content/clients"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - {label: "اسم العميل", name: "title", widget: "string"}
-      - {label: "الرابط المختصر", name: "slug", widget: "string"}
-      - {label: "نوع المنشأة", name: "category", widget: "string", required: false}
-      - {label: "الموقع", name: "location", widget: "string", required: false}
-      - {label: "الصورة", name: "image", widget: "image", required: false}
-      - {label: "وصف المشروع", name: "body", widget: "markdown"}
-
-  - name: "settings"
-    label: "إعدادات الموقع"
+  - name: "site"
+    label: "لوحة التحكم الكاملة"
     files:
-      - name: "general"
-        label: "البيانات العامة"
+      - name: "settings"
+        label: "⚙️ بيانات الموقع والصفحة الرئيسية"
         file: "content/settings.json"
+        editor: {preview: false}
         fields:
-          - {label: "اسم الشركة", name: "company_name", widget: "string"}
+          - {label: "اسم الشركة عربي", name: "company_name_ar", widget: "string"}
+          - {label: "اسم الشركة English", name: "company_name_en", widget: "string"}
+          - {label: "التعريف", name: "tagline_ar", widget: "string"}
+          - {label: "اللوجو", name: "logo", widget: "image", required: false}
+          - {label: "عنوان الصفحة الرئيسية", name: "hero_title_ar", widget: "string"}
+          - {label: "وصف الصفحة الرئيسية", name: "hero_subtitle_ar", widget: "text"}
+          - {label: "شارة الصفحة الرئيسية", name: "hero_badge_ar", widget: "string"}
+          - {label: "صورة الصفحة الرئيسية", name: "hero_image", widget: "image", required: false}
           - {label: "الهاتف", name: "phone", widget: "string"}
           - {label: "واتساب", name: "whatsapp", widget: "string"}
-          - {label: "البريد الإلكتروني", name: "email", widget: "string"}
-          - {label: "إنستجرام", name: "instagram", widget: "string", required: false}
-          - {label: "لينكدإن", name: "linkedin", widget: "string", required: false}
-          - {label: "ثريدز", name: "threads", widget: "string", required: false}
-          - {label: "فيسبوك", name: "facebook", widget: "string", required: false}
-          - {label: "نبذة مختصرة", name: "about_short", widget: "text", required: false}
+          - {label: "البريد", name: "email", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string", required: false}
+          - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+          - {label: "Threads", name: "threads", widget: "string", required: false}
+          - {label: "Facebook", name: "facebook", widget: "string", required: false}
+      - name: "services"
+        label: "🦟 الخدمات"
+        file: "content/services.json"
+        editor: {preview: false}
+        fields:
+          - label: "قائمة الخدمات"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "اسم الخدمة", name: "title", widget: "string"}
+              - {label: "الرابط المختصر", name: "slug", widget: "string"}
+              - {label: "الأيقونة", name: "icon", widget: "string", required: false}
+              - {label: "الصورة", name: "image", widget: "image", required: false}
+              - {label: "الوصف المختصر", name: "description", widget: "text"}
+              - {label: "التفاصيل", name: "details", widget: "markdown", required: false}
+      - name: "clients"
+        label: "🏢 العملاء"
+        file: "content/clients.json"
+        editor: {preview: false}
+        fields:
+          - label: "قائمة العملاء"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "اسم العميل", name: "title", widget: "string"}
+              - {label: "نوع المنشأة", name: "category", widget: "string", required: false}
+              - {label: "الموقع", name: "location", widget: "string", required: false}
+              - {label: "الصورة", name: "image", widget: "image", required: false}
+              - {label: "الوصف", name: "description", widget: "text"}
+      - name: "posts"
+        label: "📰 المقالات"
+        file: "content/posts.json"
+        editor: {preview: false}
+        fields:
+          - label: "قائمة المقالات"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "عنوان المقال", name: "title", widget: "string"}
+              - {label: "الرابط المختصر", name: "slug", widget: "string"}
+              - {label: "الصورة", name: "image", widget: "image", required: false}
+              - {label: "الوصف", name: "description", widget: "text"}
+              - {label: "المحتوى", name: "content", widget: "markdown"}
+      - name: "branches"
+        label: "📍 الفروع"
+        file: "content/branches.json"
+        editor: {preview: false}
+        fields:
+          - label: "الفروع"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "اسم الفرع", name: "title", widget: "string"}
+              - {label: "المناطق", name: "areas", widget: "text"}

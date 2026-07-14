@@ -1,5 +1,7 @@
 {
-  "company_name": "حصن أمان",
+  "company_name_ar": "حصن أمان",
+  "company_name_en": "Hisn Aman",
+  "tagline_ar": "لإبادة الآفات والحلول البيئية",
   "phone": "+96891918556",
   "whatsapp": "96891918556",
   "email": "hisnoman62@gmail.com",
@@ -7,5 +9,9 @@
   "linkedin": "https://www.linkedin.com/in/hisn-aman-pest-control-advanced-invesment-776160254?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   "threads": "https://www.threads.com/@hisnaman_.pest.om",
   "facebook": "https://www.facebook.com/share/1E4uPB3drW/",
-  "about_short": "حصن أمان لإبادة الآفات والحلول البيئية في سلطنة عمان."
+  "logo": "/assets/logo.jpg",
+  "hero_title_ar": "حلول احترافية لحماية منزلك وأعمالك",
+  "hero_subtitle_ar": "خبراء مكافحة الحشرات والقوارض في سلطنة عمان، معاينة وتشخيص ومعالجة آمنة ومتابعة دورية.",
+  "hero_badge_ar": "مكافحة آفات الصحة العامة",
+  "hero_image": "/assets/pests/fly.jpg"
 }
