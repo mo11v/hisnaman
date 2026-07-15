@@ -23,7 +23,7 @@ collections:
           - {label: "عنوان الصفحة الرئيسية", name: "hero_title_ar", widget: "string"}
           - {label: "وصف الصفحة الرئيسية", name: "hero_subtitle_ar", widget: "text"}
           - {label: "شارة الصفحة الرئيسية", name: "hero_badge_ar", widget: "string"}
-          - {label: "صورة الفني في الصفحة الرئيسية", name: "hero_image", widget: "image", required: false, hint: "صورة مربعة تقريبًا، تظهر بجانب النص في الهيرو"}
+          - {label: "صورة الصفحة الرئيسية", name: "hero_image", widget: "image", required: false}
           - {label: "الهاتف", name: "phone", widget: "string"}
           - {label: "واتساب", name: "whatsapp", widget: "string"}
           - {label: "البريد", name: "email", widget: "string"}
@@ -31,9 +31,6 @@ collections:
           - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
           - {label: "Threads", name: "threads", widget: "string", required: false}
           - {label: "Facebook", name: "facebook", widget: "string", required: false}
-          - {label: "TikTok", name: "tiktok", widget: "string", required: false}
-          - {label: "العنوان (نص)", name: "address_ar", widget: "string", required: false, hint: "يظهر في الخريطة وصفحة اتصل بنا"}
-          - {label: "رابط خرائط جوجل", name: "maps_link", widget: "string", required: false, hint: "انسخ رابط 'مشاركة' من خرائط جوجل"}
       - name: "services"
         label: "🦟 الخدمات"
         file: "content/services.json"
@@ -92,28 +89,3 @@ collections:
             fields:
               - {label: "اسم الفرع", name: "title", widget: "string"}
               - {label: "المناطق", name: "areas", widget: "text"}
-      - name: "reviews"
-        label: "⭐ آراء العملاء"
-        file: "content/reviews.json"
-        editor: {preview: false}
-        fields:
-          - label: "التقييمات"
-            name: "items"
-            widget: "list"
-            summary: "{{fields.author}}"
-            fields:
-              - {label: "عدد النجوم", name: "stars", widget: "number", default: 5, min: 1, max: 5}
-              - {label: "نص التقييم", name: "text", widget: "text"}
-              - {label: "اسم العميل", name: "author", widget: "string"}
-      - name: "packages"
-        label: "📦 الباقات"
-        file: "content/packages.json"
-        editor: {preview: false}
-        fields:
-          - label: "الباقات"
-            name: "items"
-            widget: "list"
-            summary: "{{fields.title}}"
-            fields:
-              - {label: "اسم الباقة", name: "title", widget: "string"}
-              - {label: "الوصف", name: "description", widget: "text"}
