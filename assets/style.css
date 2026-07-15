@@ -25,6 +25,7 @@ a{text-decoration:none;color:inherit}
 .nav a.active:after,.nav a:hover:after{content:"";position:absolute;right:0;left:0;bottom:-12px;height:3px;background:var(--gold);border-radius:99px}
 .cta{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#08170d!important;padding:11px 19px;border-radius:999px;font-weight:900;box-shadow:0 10px 30px rgba(216,173,55,.28)}
 .menu{display:none;background:var(--gold);color:#061b0f;border:0;border-radius:12px;padding:8px 12px;font-size:26px}
+.lang-btn-mobile{display:none}
 .mobile{display:none;background:#061b0f;border-top:1px solid rgba(255,255,255,.08);padding:12px 18px}
 .mobile a,.mobile button{display:block;color:#fff;font-weight:900;padding:12px;border-bottom:1px solid rgba(255,255,255,.08);background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:inherit;font-family:inherit}
 .hero{position:relative;min-height:640px;color:#fff;overflow:hidden;background:#061b0f}
@@ -172,6 +173,7 @@ textarea{min-height:130px}
   body{padding-bottom:74px}
   .nav{display:none}
   .menu{display:grid!important;width:58px!important;height:58px!important;place-items:center!important;padding:0!important}
+  .lang-btn-mobile{display:inline-flex!important;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:12px;padding:0 14px;height:58px;font-weight:900;font-size:14px;margin-inline-start:8px;cursor:pointer;font-family:inherit}
   .mobile.open{display:block}
   .navwrap{height:72px!important;padding:0!important}
   .logo{width:58px!important;height:50px!important;border-radius:14px!important}
