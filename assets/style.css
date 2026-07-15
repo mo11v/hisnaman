@@ -183,9 +183,9 @@ textarea{min-height:130px}
   .brand small{font-size:11px!important;white-space:nowrap}
   .hero,.hero .container{min-height:auto}
   .hero-bg{background-image:linear-gradient(0deg,rgba(4,21,11,.92) 0%,rgba(4,21,11,.55) 55%,rgba(4,21,11,.15) 100%),url('/assets/hero-bg.jpg');background-position:center top!important;background-size:100% auto!important;transform:none!important;inset:0!important;background-repeat:no-repeat!important;opacity:1!important}
-  .hero .container{grid-template-columns:1fr;padding:160px 0 36px!important;display:block!important;min-height:auto!important}
-  .hero-logo-panel{margin:0 auto 18px;max-width:210px}
-  .hero-logo-panel img{max-width:210px;border-radius:22px;padding:14px}
+  .hero .container{grid-template-columns:1fr;padding:95px 0 36px!important;display:block!important;min-height:auto!important}
+  .hero-logo-panel{margin:0 auto 16px;max-width:320px;width:88%}
+  .hero-logo-panel img{max-width:100%;width:100%;border-radius:22px;padding:14px}
   .hero-content{text-align:center!important;padding:0!important;width:100%!important}
   .hero h1{font-size:32px!important;line-height:1.28!important;margin:12px auto!important;max-width:95%!important;text-shadow:0 3px 18px rgba(0,0,0,.45)!important}
   .hero p{font-size:16px!important;margin:0 auto 18px!important;line-height:1.9!important;max-width:94%!important;color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.45)!important}
@@ -203,7 +203,7 @@ textarea{min-height:130px}
   .bottom .call{background:var(--gold);color:#061b0f}
   .bottom .wa{background:#25d366}
   .social-icons a{width:34px;height:34px}
-  .social-side{left:8px!important;top:48%!important;gap:6px!important;transform:translateY(-50%)!important;z-index:70!important}
+  .social-side{left:8px!important;top:48%!important;gap:6px!important;transform:translateY(-50%)!important;z-index:110!important}
   .social-side a{width:35px!important;height:35px!important;font-size:14px!important;border-width:1px!important}
   .pest-card:before{background-size:cover!important;background-position:center!important;transform:none!important}
   .pest-body{padding:17px!important}
@@ -238,7 +238,7 @@ textarea{min-height:130px}
 
 /* ===== Small phones (<=430px) ===== */
 @media(max-width:430px){
-  .hero .container{padding-top:150px!important}
+  .hero .container{padding-top:90px!important}
   .hero h1{font-size:30px!important}
   .hero p{font-size:15px!important}
   .hero-features div{font-size:20px!important}
