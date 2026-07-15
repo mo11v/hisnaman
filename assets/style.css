@@ -246,6 +246,6 @@ textarea{min-height:130px}
 
 /* ===== Extra small (<=380px) ===== */
 @media(max-width:380px){
-  .hero .container{padding-top:190px!important}
+  .hero .container{padding-top:90px!important}
   .hero h1{font-size:28px!important}
 }
