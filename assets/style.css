@@ -31,7 +31,9 @@ a{text-decoration:none;color:inherit}
 .hero{position:relative;min-height:640px;color:#fff;overflow:hidden;background:#061b0f}
 .hero-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(4,21,11,.12) 0%,rgba(4,21,11,.65) 48%,rgba(4,21,11,.97) 100%),url('/assets/hero-bg.jpg');background-size:cover;background-position:center left;transform:scale(1.02)}
 body.lang-en .hero-bg{background-image:linear-gradient(270deg,rgba(4,21,11,.12) 0%,rgba(4,21,11,.65) 48%,rgba(4,21,11,.97) 100%),url('/assets/hero-bg.jpg');background-position:center right}
-.hero .container{position:relative;z-index:1;min-height:640px;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.hero .container{position:relative;z-index:1;min-height:640px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px}
+.hero-logo-panel{display:flex;align-items:center;justify-content:center}
+.hero-logo-panel img{width:100%;max-width:420px;aspect-ratio:1/1;object-fit:contain;background:rgba(255,255,255,.94);border-radius:32px;padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.4);border:2px solid rgba(216,173,55,.5)}
 .hero-content{padding:60px 0;text-align:right}
 body.lang-en .hero-content{text-align:left}
 .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(216,173,55,.14);border:1px solid rgba(216,173,55,.45);border-radius:999px;color:#ffe493;padding:8px 15px;font-weight:900}
@@ -182,6 +184,8 @@ textarea{min-height:130px}
   .hero,.hero .container{min-height:auto}
   .hero-bg{background-image:linear-gradient(0deg,rgba(4,21,11,.92) 0%,rgba(4,21,11,.55) 55%,rgba(4,21,11,.15) 100%),url('/assets/hero-bg.jpg');background-position:center top!important;background-size:100% auto!important;transform:none!important;inset:0!important;background-repeat:no-repeat!important;opacity:1!important}
   .hero .container{grid-template-columns:1fr;padding:220px 0 36px!important;display:block!important;min-height:auto!important}
+  .hero-logo-panel{margin:0 auto 24px;max-width:260px}
+  .hero-logo-panel img{max-width:260px;border-radius:24px;padding:16px}
   .hero-content{text-align:center!important;padding:0!important;width:100%!important}
   .hero h1{font-size:32px!important;line-height:1.28!important;margin:12px auto!important;max-width:95%!important;text-shadow:0 3px 18px rgba(0,0,0,.45)!important}
   .hero p{font-size:16px!important;margin:0 auto 18px!important;line-height:1.9!important;max-width:94%!important;color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.45)!important}
@@ -199,8 +203,7 @@ textarea{min-height:130px}
   .bottom .call{background:var(--gold);color:#061b0f}
   .bottom .wa{background:#25d366}
   .social-icons a{width:34px;height:34px}
-  .social-side{left:8px!important;top:48%!important;gap:6px!important;transform:translateY(-50%)!important;z-index:70!important}
-  .social-side a{width:35px!important;height:35px!important;font-size:14px!important;border-width:1px!important}
+  .social-side{display:none!important}
   .pest-card:before{background-size:cover!important;background-position:center!important;transform:none!important}
   .pest-body{padding:17px!important}
   .pest-body h3{font-size:22px!important;line-height:1.35!important}
@@ -244,5 +247,4 @@ textarea{min-height:130px}
 @media(max-width:380px){
   .hero .container{padding-top:190px!important}
   .hero h1{font-size:28px!important}
-  .social-side a{width:32px!important;height:32px!important;font-size:13px!important}
 }
