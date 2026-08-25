@@ -8,24 +8,6 @@
     Cache-Control = "no-store, max-age=0"
 
 [[redirects]]
-  from = "/go/facebook"
-  to = "https://m.facebook.com/hisnaman1"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/go/instagram"
-  to = "https://www.instagram.com/_u/hisn_aman/"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/go/tiktok"
-  to = "https://www.tiktok.com/@hisn.aman"
-  status = 302
-  force = true
-
-[[redirects]]
   from = "/admin/*"
   to = "/admin/index.html"
   status = 200

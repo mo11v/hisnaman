@@ -8,7 +8,15 @@
 </head>
 <body>
   <p>جارٍ فتح صفحة حصن أمان على Facebook…</p>
-  <p><a href="https://m.facebook.com/hisnaman1" rel="noreferrer">اضغط هنا إذا لم يتم التحويل تلقائيًا</a></p>
-  <script>window.location.replace("https://m.facebook.com/hisnaman1");</script>
+  <p><a href="https://www.facebook.com/profile.php?id=61562172514137" rel="noreferrer">اضغط هنا إذا لم يتم التحويل تلقائيًا</a></p>
+  <script>
+    const webUrl = "https://www.facebook.com/profile.php?id=61562172514137";
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.href = "fb://page/61562172514137";
+      setTimeout(() => window.location.replace(webUrl), 1400);
+    } else {
+      window.location.replace(webUrl);
+    }
+  </script>
 </body>
 </html>
