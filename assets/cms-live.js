@@ -28,7 +28,8 @@
       qa('a[href^="mailto:"]').forEach(a => a.href = 'mailto:' + (s.email || ''));
       qa('a[href*="wa.me"]').forEach(a => a.href = 'https://wa.me/' + (s.whatsapp || ''));
       qa('.instagram').forEach(a => { if (s.instagram) a.href = s.instagram; });
-      qa('.linkedin').forEach(a => { if (s.linkedin) a.href = s.linkedin; });
+      qa('.tiktok').forEach(a => { if (s.tiktok) a.href = s.tiktok; });
+      qa('.linkedin').forEach(a => a.remove());
       qa('.threads').forEach(a => { if (s.threads) a.href = s.threads; });
       qa('.facebook').forEach(a => { if (s.facebook) a.href = s.facebook; });
     }
