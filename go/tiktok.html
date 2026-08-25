@@ -9,6 +9,14 @@
 <body>
   <p>جارٍ فتح حساب حصن أمان على TikTok…</p>
   <p><a href="https://www.tiktok.com/@hisn.aman" rel="noreferrer">اضغط هنا إذا لم يتم التحويل تلقائيًا</a></p>
-  <script>window.location.replace("https://www.tiktok.com/@hisn.aman");</script>
+  <script>
+    const webUrl = "https://www.tiktok.com/@hisn.aman";
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.href = "snssdk1233://user/profile/7665695939650274326";
+      setTimeout(() => window.location.replace(webUrl), 1400);
+    } else {
+      window.location.replace(webUrl);
+    }
+  </script>
 </body>
 </html>

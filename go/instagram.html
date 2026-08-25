@@ -8,7 +8,15 @@
 </head>
 <body>
   <p>جارٍ فتح حساب حصن أمان على Instagram…</p>
-  <p><a href="https://www.instagram.com/_u/hisn_aman/" rel="noreferrer">اضغط هنا إذا لم يتم التحويل تلقائيًا</a></p>
-  <script>window.location.replace("https://www.instagram.com/_u/hisn_aman/");</script>
+  <p><a href="https://www.instagram.com/hisn_aman/" rel="noreferrer">اضغط هنا إذا لم يتم التحويل تلقائيًا</a></p>
+  <script>
+    const webUrl = "https://www.instagram.com/hisn_aman/";
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.href = "instagram://user?username=hisn_aman";
+      setTimeout(() => window.location.replace(webUrl), 1400);
+    } else {
+      window.location.replace(webUrl);
+    }
+  </script>
 </body>
 </html>
